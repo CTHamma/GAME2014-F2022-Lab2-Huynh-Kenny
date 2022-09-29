@@ -352,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1441676458}
   - component: {fileID: 1441676459}
+  - component: {fileID: 1441676460}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -389,6 +390,20 @@ MonoBehaviour:
   enemyNumber: 3
   enemyPrefab: {fileID: 7341445352689864639, guid: 124c2bd9f2eb91e4d970e6bf4f597c4c, type: 3}
   enemyList: []
+--- !u!114 &1441676460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441676456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb10c9cd055041449e560540f684b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreLabel: {fileID: 995133785}
+  score: 0
 --- !u!1 &1727519592
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,12 +452,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1440, y: 3040}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -621,6 +636,10 @@ PrefabInstance:
     - target: {fileID: 3372169470572015736, guid: 57b8b2830d176b247976c98b270b89ff, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372169470572015737, guid: 57b8b2830d176b247976c98b270b89ff, type: 3}
+      propertyPath: scoreManager
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3372169470572015737, guid: 57b8b2830d176b247976c98b270b89ff, type: 3}
       propertyPath: usingMobileInput
